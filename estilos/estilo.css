@@ -1,0 +1,648 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+.encabezado {
+  background-color: #111111;
+}
+
+.navegacion {
+  padding: 12px 20px;
+  background-color: #66aaff;
+  font-weight: bold;
+}
+
+.lista-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.lista-nav li {
+  display: inline;
+}
+
+.enlace-nav {
+  color: #ffffff;
+  font-size: 17px;
+  padding: 6px 12px;
+}
+
+.enlace-nav:hover {
+  color: #cc44cc;
+}
+
+.portada {
+  background-color: #1a0020;
+  position: relative;
+  text-align: center;
+  padding: 60px 20px 50px 20px;
+  overflow: hidden;
+}
+
+.imagen-portada {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.contenido-portada {
+  position: relative;
+}
+
+.titulo-primavera {
+  font-size: 60px;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.titulo-fest {
+  font-size: 90px;
+  font-weight: 900;
+  color: #cc44cc;
+  line-height: 1;
+}
+
+.subtitulo-crossover {
+  font-size: 15px;
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+.fecha-portada {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 20px 0 10px 0;
+  letter-spacing: 4px;
+  line-height: 1.2;
+}
+
+.descripcion-portada {
+  font-size: 14px;
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+.seccion-pregunta {
+  background-color: #cc44cc;
+  text-align: center;
+  padding: 18px 20px;
+}
+
+.texto-pregunta {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.seccion-descripcion {
+  background-color: #000000;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.texto-descripcion {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #ffffff;
+  max-width: 680px;
+  margin: 0 auto 30px auto;
+}
+
+.titulo-contador {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.contador {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.bloque-contador {
+  background-color: #00cc66;
+  color: #000000;
+  padding: 15px 20px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 90px; 
+}
+
+.numero-contador {
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.etiqueta-contador {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.boton-rosa {
+  display: inline-block;
+  background-color: #cc44cc;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 35px;
+  border-radius: 30px;
+  margin-bottom: 25px;
+}
+
+.boton-rosa:hover {
+  background-color: #cc0088;
+}
+
+.texto-sold-out {
+  font-size: 14px;
+  color: #cccccc;
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.seccion-programacion {
+  background-color: #66aaff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.titulo-programacion {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.grilla-dias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.columna-dia {
+  flex: 1;
+  min-width: 220px;
+}
+
+.nombre-dia {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 8px;
+}
+
+.lista-shows {
+  list-style: none;
+}
+
+.item-show {
+  font-size: 15px;
+  color: #ffffff;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hora-show {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.seccion-artistas {
+  background-color: #000000;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.titulo-artistas {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+.carrusel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ventana-carrusel {
+  overflow: hidden;
+  width: 660px;
+  max-width: 100%;
+}
+
+.pista-carrusel {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.tarjeta-artista {
+  min-width: 220px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.foto-artista {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin: 0 auto;
+}
+
+.nombre-artista {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffdd00;
+}
+
+.boton-flecha {
+  background-color: #ffdd00;
+  color: #000000;
+  border: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.boton-flecha:hover {
+  background-color: #cc44cc;
+  color: #ffffff;
+}
+
+.seccion-entradas {
+  background-color: #cc44cc;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.titulo-entradas {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+.tabla-entradas {
+  border-collapse: collapse;
+  margin: 0 auto 25px auto;
+  min-width: 320px;
+}
+
+.celda-tipo {
+  padding: 10px 25px 10px 10px;
+  color: #ffffff;
+  font-size: 15px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.celda-precio {
+  padding: 10px 10px 10px 25px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: right;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.boton-negro {
+  display: inline-block;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
+.boton-negro:hover {
+  background-color: #333333;
+}
+
+.seccion-alojamiento {
+  background-color: #000000;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.titulo-alojamiento {
+  font-size: 26px;
+  font-weight: bold;
+  color: #00cc66;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.texto-alojamiento {
+  font-size: 14px;
+  color: #ffffff;
+  max-width: 560px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
+}
+
+.grilla-hoteles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.tarjeta-hotel {
+  text-align: center;
+  width: 200px;
+}
+
+.foto-hotel {
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.nombre-hotel {
+  color: #00cc66;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.boton-verde {
+  display: inline-block;
+  background-color: #00cc66;
+  color: #000000;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 8px 22px;
+  border-radius: 20px;
+}
+
+.boton-verde:hover {
+  background-color: #009944;
+  color: #ffffff;
+}
+
+.seccion-tiquetes {
+  background-color: #000000;
+  padding: 40px 20px;
+  border-top: 3px solid #111111;
+}
+
+.contenedor-tiquetes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bloque-viaje {
+  flex: 1;
+  min-width: 200px;
+  text-align: left;
+}
+
+.texto-y-para {
+  font-size: 60px;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1.1;
+}
+
+.texto-viajar {
+  font-size: 60px;
+  font-weight: 900;
+  color: #00ccff;
+  line-height: 1.1;
+}
+
+.bloque-aerolinea {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  background-color: #111111;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.titulo-latam {
+  font-size: 20px;
+  color: #00ccff;
+  margin-bottom: 12px;
+}
+
+.logo-latam {
+  width: 160px;
+  margin: 0 auto 12px auto;
+}
+
+.texto-latam {
+  font-size: 13px;
+  color: #00ccff;
+  margin-bottom: 15px;
+}
+
+.seccion-galeria {
+  background-color: #000000;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.titulo-galeria {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffdd00;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  background-color: #cc44cc;
+  padding: 10px;
+}
+
+.subtitulo-galeria {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.grilla-galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.foto-galeria {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.pie-pagina {
+  background-color: #111111;
+  text-align: center;
+  padding: 25px 20px;
+}
+
+.texto-redes {
+  font-size: 12px;
+  color: #aaaaaa;
+  margin-bottom: 12px;
+}
+
+.iconos-redes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.enlace-red {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.enlace-red:hover {
+  color: #cc44cc;
+}
+
+.cuerpo-entradas {
+  background-color: #000000;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  padding: 40px 20px;
+}
+
+.titulo-pagina-entradas {
+  text-align: center;
+  font-size: 70px;
+  font-weight: 900;
+  color: #ee66ff;
+  margin-bottom: 50px;
+}
+
+.lista-entradas {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.fila-entrada {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 10px;
+  border-bottom: 1px solid #222222;
+}
+
+.tipo-entrada {
+  font-size: 16px;
+  color: #ffffff;
+  width: 200px;
+}
+
+.precio-entrada {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  flex: 1;
+  text-align: center;
+}
+
+.boton-comprar {
+  display: inline-block;
+  background-color: #ee66ff;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  min-width: 150px;
+  text-align: center;
+}
+
+.boton-comprar:hover {
+  background-color: #cc44dd;
+}
+
+@media (max-width: 768px) {
+  .titulo-primavera { font-size: 42px; }
+  .titulo-fest { font-size: 65px; }
+  .grilla-dias { flex-direction: column; align-items: center; }
+  .ventana-carrusel { width: 440px; }
+  .grilla-hoteles { flex-direction: column; align-items: center; }
+  .contenedor-tiquetes { flex-direction: column; text-align: center; }
+  .bloque-viaje { text-align: center; }
+  .grilla-galeria { grid-template-columns: 1fr 1fr; justify-items: center; }
+  .foto-galeria { width: 100%; height: 120px; }
+}
+
+@media (max-width: 480px) {
+  .lista-nav { flex-direction: column; align-items: center; }
+  .titulo-primavera { font-size: 32px; }
+  .titulo-fest { font-size: 50px; }
+  .fecha-portada { font-size: 22px; }
+  .contador { gap: 8px; }
+  .bloque-contador { min-width: 65px; padding: 12px 10px; }
+  .numero-contador { font-size: 28px; }
+  .ventana-carrusel { width: 220px; }
+  .grilla-galeria { grid-template-columns: 1fr; justify-items: center; }
+  .foto-galeria { width: 90%; height: 180px; }
+  .tabla-entradas { width: 100%; }
+  .texto-y-para, .texto-viajar { font-size: 28px; }
+}

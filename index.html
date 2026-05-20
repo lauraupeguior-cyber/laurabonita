@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primavera Fest</title>
+    <link rel="stylesheet" href="estilos/estilo.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <nav class="navegacion">
+        <ul class="lista-nav">
+          <li><a href="#" class="enlace-nav">Inicio</a></li>
+          <li><a href="#programacion" class="enlace-nav">Programación</a></li>
+          <li><a href="#artistas" class="enlace-nav">Artistas</a></li>
+          <li><a href="#entradas" class="enlace-nav">Entradas</a></li>
+          <li><a href="#alojamiento" class="enlace-nav">Alojamiento</a></li>
+          <li><a href="#tiquetes" class="enlace-nav">Tiquetes</a></li>
+          <li><a href="#galeria" class="enlace-nav">Galería</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="portada">
+      <img src="img/0imgpincipal.jpg" alt="Fondo portada" class="imagen-portada"/>
+      <div class="contenido-portada">
+        <h1 class="titulo-primavera">PRIMAVERA</h1>
+        <h1 class="titulo-fest">FEST</h1>
+        <p class="subtitulo-crossover">El Festival Musical Crossover que recibirá la primavera</p>
+        <p class="fecha-portada">10 Y 11<br />OCTUBRE</p>
+        <p class="descripcion-portada">
+          Descubre por qué el mundo entero elige a Medellín para vivir<br />el mejor fin de semana
+        </p>
+      </div>
+    </section>
+
+    <section class="seccion-pregunta">
+      <p class="texto-pregunta">¿Estás list@ para vivir el mejor festival de toda la primavera?</p>
+    </section>
+
+    <section class="seccion-descripcion">
+      <p class="texto-descripcion">
+        El Primavera Fest llega a la Ciudad de la Eterna Primavera este 10 y 11 de octubre para
+        ofrecerte la mejor experiencia musical, con artistas reconocidos a nivel mundial el Estadio
+        Atanasio Girardot vibrará de emoción y de buena energía.
+      </p>
+
+      <h2 class="titulo-contador">
+        ¡La cuenta regresiva para el mejor festival musical ya inició!
+      </h2>
+
+      <div class="contador">
+        <div class="bloque-contador">
+          <span class="numero-contador" id="dias">00</span>
+          <span class="etiqueta-contador">días</span>
+        </div>
+        <div class="bloque-contador">
+          <span class="numero-contador" id="horas">00</span>
+          <span class="etiqueta-contador">horas</span>
+        </div>
+        <div class="bloque-contador">
+          <span class="numero-contador" id="minutos">00</span>
+          <span class="etiqueta-contador">minutos</span>
+        </div>
+        <div class="bloque-contador">
+          <span class="numero-contador" id="segundos">00</span>
+          <span class="etiqueta-contador">segundos</span>
+        </div>
+      </div>
+
+      <a href="entradas.html" class="boton-rosa">CONSIGUE TUS BOLETOS AQUÍ</a>
+
+      <p class="texto-sold-out">
+        Asegura tu lugar antes de que hagamos Sold Out y prepárate para hacer historia en Medellín.
+      </p>
+    </section>
+
+    <section class="seccion-programacion" id="programacion">
+      <h2 class="titulo-programacion">PROGRAMACIÓN</h2>
+      <div class="grilla-dias">
+        <div class="columna-dia">
+          <h3 class="nombre-dia">Sábado 10</h3>
+          <ul class="lista-shows">
+            <li class="item-show"><span class="hora-show">6:00 P.M</span> Marshmello</li>
+            <li class="item-show"><span class="hora-show">8:00 P.M</span> Miley Cirus</li>
+            <li class="item-show"><span class="hora-show">9:30 P.M</span> Lana del Rey</li>
+            <li class="item-show"><span class="hora-show">11:00 P.M</span> Bad Bunny</li>
+          </ul>
+        </div>
+
+        <div class="columna-dia">
+          <h3 class="nombre-dia">Domingo 11</h3>
+          <ul class="lista-shows">
+            <li class="item-show"><span class="hora-show">6:00 P.M</span> Taylor Swift</li>
+            <li class="item-show"><span class="hora-show">8:00 P.M</span> Rosalía</li>
+            <li class="item-show"><span class="hora-show">9:30 P.M</span> Justin Bieber</li>
+            <li class="item-show"><span class="hora-show">11:00 P.M</span> Karol G</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-artistas" id="artistas">
+      <h2 class="titulo-artistas">ARTISTAS</h2>
+
+      <div class="carrusel">
+        <button class="boton-flecha" id="boton-anterior">&#10094;</button>
+
+        <div class="ventana-carrusel">
+          <div class="pista-carrusel" id="pista-carrusel">
+            <div class="tarjeta-artista">
+              <img src="img/foto8.png" alt="Taylor Swift" class="foto-artista" />
+              <p class="nombre-artista">TAYLOR SWIFT</p>
+            </div>
+
+            <div class="tarjeta-artista">
+              <img src="img/foto7.png" alt="Justin Bieber" class="foto-artista" />
+              <p class="nombre-artista">JUSTIN BIEBER</p>
+            </div>
+
+            <div class="tarjeta-artista">
+              <img src="img/foto1.png" alt="Karol G" class="foto-artista" />
+              <p class="nombre-artista">KAROL G</p>
+            </div>
+
+            <div class="tarjeta-artista">
+              <img src="img/foto2.png" alt="Bad Bunny" class="foto-artista" />
+              <p class="nombre-artista">BAD BUNNY</p>
+            </div>
+
+            <div class="tarjeta-artista">
+              <img src="img/foto4.png" alt="Marshmello" class="foto-artista" />
+              <p class="nombre-artista">MARSHMELLO</p>
+            </div>
+
+            <div class="tarjeta-artista">
+              <img src="img/foto3.png" alt="Lana del Rey" class="foto-artista" />
+              <p class="nombre-artista">LANA DEL REY</p>
+            </div>
+
+            <div class="tarjeta-artista">
+              <img src="img/foto6.png" alt="Rosalía" class="foto-artista" />
+              <p class="nombre-artista">ROSALÍA</p>
+            </div>
+
+            <div class="tarjeta-artista">
+              <img src="img/foto5.png" alt="Miley Cirus" class="foto-artista" />
+              <p class="nombre-artista">MILEY CIRUS</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="boton-flecha" id="boton-siguiente">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="seccion-entradas" id="entradas">
+      <h2 class="titulo-entradas">ENTRADAS</h2>
+      <table class="tabla-entradas">
+        <tr>
+          <td class="celda-tipo">VIP</td>
+          <td class="celda-precio">$1'590.000 COP</td>
+        </tr>
+        <tr>
+          <td class="celda-tipo">PALCOS FAN</td>
+          <td class="celda-precio">$1'150.000 COP</td>
+        </tr>
+        <tr>
+          <td class="celda-tipo">GRAMILLA</td>
+          <td class="celda-precio">$990.000 COP</td>
+        </tr>
+        <tr>
+          <td class="celda-tipo">GRADERÍA ORIENTAL</td>
+          <td class="celda-precio">$850.000 COP</td>
+        </tr>
+        <tr>
+          <td class="celda-tipo">GRADERÍA OCCIDENTAL</td>
+          <td class="celda-precio">$650.000 COP</td>
+        </tr>
+        <tr>
+          <td class="celda-tipo">GRADERÍA NORTE</td>
+          <td class="celda-precio">$400.000 COP</td>
+        </tr>
+      </table>
+      <a href="entradas.html" class="boton-negro">CLIC AQUÍ</a>
+    </section>
+
+    <section class="seccion-alojamiento" id="alojamiento">
+      <h2 class="titulo-alojamiento">ALOJAMIENTO</h2>
+      <p class="texto-alojamiento">
+        Desde PRIMAVERA FEST queremos que vivas la mejor experiencia paisa, por eso nos encargamos
+        de buscar para ti los mejores lugares de hospedaje a un mejor precio.
+      </p>
+      <div class="grilla-hoteles">
+        <div class="tarjeta-hotel">
+          <img src="img/hotel1.jpg" alt="Hotel Boutique Obelisco" class="foto-hotel" />
+          <p class="nombre-hotel">Hotel Boutique Obelisco</p>
+          <a href="https://www.booking.com/Share-yRkbCt7" class="boton-verde">CLIC AQUÍ</a>
+        </div>
+
+        <div class="tarjeta-hotel">
+          <img src="img/hotel2.jpg" alt="Hotel Tequendama" class="foto-hotel" />
+          <p class="nombre-hotel">Hotel Tequendama</p>
+          <a href="https://www.booking.com/Share-li4kmTD" class="boton-verde">CLIC AQUÍ</a>
+        </div>
+
+        <div class="tarjeta-hotel">
+          <img src="img/hotel 3.jpg" alt="Hotel Sauces del Estadio" class="foto-hotel" />
+          <p class="nombre-hotel">Hotel Sauces del Estadio</p>
+          <a href="https://www.booking.com/Share-l72oP9" class="boton-verde">CLIC AQUÍ</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-tiquetes" id="tiquetes">
+      <div class="contenedor-tiquetes">
+        <div class="bloque-viaje">
+          <p class="texto-y-para">¿Y PARA</p>
+          <p class="texto-viajar">VIAJAR?</p>
+        </div>
+
+        <div class="bloque-aerolinea">
+          <h3 class="titulo-latam">LATAM AIRLINES</h3>
+          <img src="img/aerolina.png" alt="LATAM Airlines" class="logo-latam" />
+          <p class="texto-latam">Es tu mejor opción para llegar al Primavera Fest</p>
+          <a href="https://www.latamairlines.com/co/es" class="boton-verde">CLIC AQUÍ</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-galeria" id="galeria">
+      <h2 class="titulo-galeria">GALERÍA</h2>
+      <p class="subtitulo-galeria">Los mejores momentos se viven en el Primavera Fest</p>
+      <div class="grilla-galeria">
+        <img src="img/galeria6.png" alt="Foto festival 6" class="foto-galeria" />
+        <img src="img/galeria3.jpg" alt="Foto festival 3" class="foto-galeria" />
+        <img src="img/galeria5.png" alt="Foto festival 5" class="foto-galeria" />
+        <img src="img/galeria1.jpg" alt="Foto festival 1" class="foto-galeria" />
+        <img src="img/galeria2.jpg" alt="Foto festival 2" class="foto-galeria" />
+        <img src="img/galeria4.jpg" alt="Foto festival 4" class="foto-galeria" />
+      </div>
+    </section>
+
+    <footer class="pie-pagina">
+      <p class="texto-redes">Síguenos en nuestras redes</p>
+      <div class="iconos-redes">
+        <a href="#" class="enlace-red">Instagram</a>
+        <a href="#" class="enlace-red">Facebook</a>
+        <a href="#" class="enlace-red">YouTube</a>
+        <a href="#" class="enlace-red">X</a>
+        <a href="#" class="enlace-red">TikTok</a>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

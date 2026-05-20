@@ -30,6 +30,17 @@ img {
   padding: 12px 20px;
   background-color: #66aaff;
   font-weight: bold;
+  position: relative;
+}
+
+.menu-hamburguesa {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 5px 10px;
 }
 
 .lista-nav {
@@ -146,9 +157,9 @@ img {
 .contador {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; 
   gap: 15px;
   margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 .bloque-contador {
@@ -159,7 +170,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 90px; 
+  min-width: 85px;
 }
 
 .numero-contador {
@@ -621,28 +632,127 @@ img {
 }
 
 @media (max-width: 768px) {
-  .titulo-primavera { font-size: 42px; }
-  .titulo-fest { font-size: 65px; }
-  .grilla-dias { flex-direction: column; align-items: center; }
-  .ventana-carrusel { width: 440px; }
-  .grilla-hoteles { flex-direction: column; align-items: center; }
-  .contenedor-tiquetes { flex-direction: column; text-align: center; }
-  .bloque-viaje { text-align: center; }
-  .grilla-galeria { grid-template-columns: 1fr 1fr; justify-items: center; }
-  .foto-galeria { width: 100%; height: 120px; }
+  .titulo-primavera {
+    font-size: 42px;
+  }
+
+  .titulo-fest {
+    font-size: 65px;
+  }
+
+  .grilla-dias {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ventana-carrusel {
+    width: 440px;
+  }
+
+  .grilla-hoteles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedor-tiquetes {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bloque-viaje {
+    text-align: center;
+  }
+
+  .grilla-galeria {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  .foto-galeria {
+    width: 100%;
+    height: 120px;
+  }
 }
 
 @media (max-width: 480px) {
-  .lista-nav { flex-direction: column; align-items: center; }
-  .titulo-primavera { font-size: 32px; }
-  .titulo-fest { font-size: 50px; }
-  .fecha-portada { font-size: 22px; }
-  .contador { gap: 8px; }
-  .bloque-contador { min-width: 65px; padding: 12px 10px; }
-  .numero-contador { font-size: 28px; }
-  .ventana-carrusel { width: 220px; }
-  .grilla-galeria { grid-template-columns: 1fr; justify-items: center; }
-  .foto-galeria { width: 90%; height: 180px; }
-  .tabla-entradas { width: 100%; }
-  .texto-y-para, .texto-viajar { font-size: 28px; }
+  .menu-hamburguesa {
+    display: block; 
+  }
+
+  .lista-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #66aaff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 15px 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  
+  .lista-nav.mostrar {
+    display: flex; 
+  }
+
+  .lista-nav li {
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+  }
+
+  .titulo-primavera {
+    font-size: 32px;
+  }
+
+  .titulo-fest {
+    font-size: 50px;
+  }
+
+  .fecha-portada {
+    font-size: 22px;
+  }
+
+  .contador {
+    gap: 8px;
+  }
+
+  .bloque-contador {
+    min-width: 72px;
+    padding: 10px 5px;
+  }
+
+  .numero-contador {
+    font-size: 26px;
+  }
+
+  .etiqueta-contador {
+    font-size: 10px;
+  }
+
+  .ventana-carrusel {
+    width: 220px;
+  }
+
+  .grilla-galeria {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .foto-galeria {
+    width: 90%;
+    height: 180px;
+  }
+
+  .tabla-entradas {
+    width: 100%;
+  }
+
+  .texto-y-para,
+  .texto-viajar {
+    font-size: 28px;
+  }
 }
